@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Humidity</title>
+    <style>
+        .custom-background {
+            background-image: url('/assets/5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Responsiveness using media queries */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="custom-background">
+    <div class="container mx-auto p-6 w-3/6 md:w-2/3 lg:w-1/2 mt-10">
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h1 class="text-3xl font-bold text-center mb-6 uppercase">Humidity</h1>
+            <div id="intro-text" class="text-gray-700 leading-7 text-xl text-justify">
+                <p>
+                    Sensor kelembaban (humidity sensor) adalah perangkat elektronik yang dirancang untuk mengukur kadar kelembaban dalam udara atau lingkungan tertentu. Kelembaban adalah ukuran seberapa banyak uap air yang ada dalam udara, dan perangkat ini penting dalam banyak aplikasi karena kelembaban dapat mempengaruhi kenyamanan, kesehatan, dan kinerja sistem.
+                </p>
+                <br>
+                <p>
+                    Ada beberapa jenis sensor kelembaban yang berbeda, tetapi salah satu yang paling umum adalah sensor resistif yang menggunakan bahan yang sensitif terhadap kelembaban. Sensor ini terbuat dari bahan higroskopis yang akan berubah resistansinya berdasarkan jumlah kelembaban di sekitarnya. Ketika kelembaban meningkat, bahan tersebut menyerap lebih banyak uap air, menyebabkan resistansinya berkurang. Sebaliknya, ketika kelembaban berkurang, bahan tersebut melepaskan uap air dan resistansinya meningkat.
+                </p>
+                <br>
+            </div>
+            <div id="full-text" class="text-gray-700 leading-7 hidden text-xl text-justify">
+                <p>
+                    Sinyal output dari sensor kelembaban biasanya berupa tegangan atau arus yang berkorelasi dengan kadar kelembaban saat itu. Hasil pengukuran ini dapat digunakan dalam berbagai aplikasi seperti:
+                </p>
+                <br>
+                <ol class="list-decimal list-inside">
+                    <li>Sistem HVAC (Heating, Ventilation, and Air Conditioning): Sensor kelembaban digunakan untuk mengontrol kelembaban di dalam gedung agar tetap nyaman dan mencegah pertumbuhan jamur atau bakteri yang merugikan kesehatan.</li>
+                    <li>Perangkat Elektronik: Pada perangkat elektronik seperti ponsel pintar dan komputer, sensor kelembaban dapat membantu mendeteksi kondisi lembab yang berlebihan dan mencegah kerusakan akibat kelembaban.</li>
+                    <li>Pertanian dan Tanaman: Sensor kelembaban digunakan dalam aplikasi pertanian dan pertanaman untuk mengawasi tingkat kelembaban tanah dan lingkungan, sehingga memungkinkan petani untuk mengoptimalkan irigasi dan mendapatkan hasil panen yang lebih baik.</li>
+                    <li>Meteorologi: Sensor kelembaban digunakan dalam stasiun cuaca dan pengamatan iklim untuk memahami kondisi atmosfer dan membantu dalam prediksi cuaca.</li>
+                    <li>Industri Farmasi: Di industri farmasi dan kesehatan, sensor kelembaban digunakan dalam penyimpanan dan produksi obat-obatan yang memerlukan kondisi lingkungan yang stabil.</li>
+                </ol>
+                <br>
+                <p>
+                    Sensor kelembaban memiliki peran yang penting dalam berbagai aplikasi untuk memantau dan mengendalikan kadar kelembaban di lingkungan tertentu.
+                </p>
+            </div>
+            <div class="flex justify-between mt-6">
+                <button id="btn-toggle" class="bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-auto">
+                    Lanjutkan Membaca
+                </button>
+                <button id="" class="bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-auto">
+                    <a href="index.html" class="">Kembali</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script2.js"></script>
+</body>
+</html>

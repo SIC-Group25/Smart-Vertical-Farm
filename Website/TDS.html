@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>TDS</title>
+    <style>
+        .custom-background {
+            background-image: url('/assets/5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Responsiveness using media queries */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            .text-xl {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body class="custom-background">
+    <div class="container mx-auto p-6 w-3/6 md:w-2/3 lg:w-1/2 mt-10">
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h1 class="text-3xl font-bold text-center mb-6 uppercase">TDS</h1>
+            <div id="intro-text" class="text-gray-700 leading-7 text-xl text-justify">
+                <p>
+                    Sensor Total Dissolved Solids (TDS) adalah perangkat elektronik yang digunakan untuk mengukur total jumlah zat terlarut dalam sebuah larutan. TDS adalah singkatan dari Total Dissolved Solids, yang mengacu pada semua zat yang terlarut dalam air atau larutan lainnya. Zat-zat terlarut ini bisa berupa garam, mineral, logam, ion, senyawa organik, dan lain-lain.
+                </p>
+                <p>
+                    Sensor TDS berfungsi dengan cara mengukur konduktivitas listrik dari larutan. Ketika zat-zat terlarut hadir dalam air, mereka akan membentuk ion-ion yang dapat menghantarkan listrik. Semakin banyak zat terlarut yang ada dalam air, semakin tinggi konduktivitasnya.
+                </p>
+            </div>
+            <div id="full-text" class="text-gray-700 leading-7 hidden text-xl text-justify">
+                <p>
+                    TDS sensor biasanya menggunakan dua elektroda yang ditempatkan dalam larutan. Ketika arus listrik dialirkan melalui larutan melalui elektroda, sensor akan mengukur hambatan atau konduktivitas listrik larutan tersebut. Nilai hambatan ini kemudian dikonversi menjadi nilai TDS dalam ppm (parts per million) atau mg/L (milligrams per liter).
+                </p>
+                <br>
+                <p>
+                    Aplikasi umum dari sensor TDS meliputi:
+                </p>
+                <br>
+                <ol class="list-decimal list-inside">
+                    <li>Pemantauan Kualitas Air: Sensor TDS digunakan untuk mengukur tingkat zat-zat terlarut dalam air minum, air sungai, air sumur, dan air laut. Hal ini membantu dalam pemantauan kualitas air dan menentukan apakah air tersebut layak untuk dikonsumsi atau digunakan dalam berbagai keperluan.</li>
+                    <li>Pengolahan Air: Sensor TDS digunakan dalam industri pengolahan air untuk memantau efisiensi proses penyaringan, desalinasi, dan pemurnian air.</li>
+                    <li>Akuarium dan Kolam Renang: Sensor TDS digunakan dalam akuarium dan kolam renang untuk memantau tingkat zat terlarut dalam air dan mengoptimalkan kualitas air untuk kesehatan ikan atau hewan akuatik.</li>
+                    <li>Pertanian dan Irigasi: Sensor TDS membantu petani untuk mengukur tingkat garam atau mineral dalam air irigasi, sehingga mereka dapat mengatur takaran air yang sesuai dengan kebutuhan tanaman.</li>
+                    <li>Industri Makanan dan Minuman: Dalam industri makanan dan minuman, sensor TDS digunakan untuk memastikan kualitas air yang digunakan dalam proses produksi.</li>
+                </ol>
+                <br>
+                <p>
+                    Perlu diingat bahwa sensor TDS dapat memberikan nilai keseluruhan dari semua zat terlarut tanpa membedakan jenis zat terlarut tertentu. Oleh karena itu, dalam beberapa aplikasi, sensor TDS dapat dikombinasikan dengan sensor lainnya untuk mendapatkan gambaran yang lebih lengkap tentang komposisi zat terlarut dalam larutan.
+                </p>
+            </div>
+            <div class="flex justify-between mt-6">
+                <button id="btn-toggle" class="bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-auto">
+                    Lanjutkan Membaca
+                </button>
+                <button id="" class="bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-auto">
+                    <a href="index.html" class="">Kembali</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script2.js"></script>
+</body>
+</html>

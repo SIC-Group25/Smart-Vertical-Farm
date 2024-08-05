@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Water Level</title>
+    <style>
+        .custom-background {
+            background-image: url('/assets/5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Responsiveness using media queries */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            .text-xl {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body class="custom-background">
+    <div class="container mx-auto p-6 w-3/6 md:w-2/3 lg:w-1/2 mt-10">
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h1 class="text-3xl font-bold text-center mb-6 uppercase">Water Level</h1>
+            <div id="intro-text" class="text-gray-700 leading-7 text-xl text-justify">
+                <p>
+                    Water level sensor (sensor tingkat air) adalah perangkat elektronik yang digunakan untuk mengukur tingkat atau ketinggian air dalam tangki, sumur, sungai, dan berbagai tempat lainnya. Sensor ini membantu dalam memantau dan mengontrol jumlah air yang tersedia atau digunakan dalam berbagai aplikasi.
+                </p>
+                <p>
+                    Ada beberapa jenis sensor tingkat air yang berbeda, dengan prinsip kerja yang beragam. Beberapa di antaranya termasuk:
+                </p>
+            </div>
+            <div id="full-text" class="text-gray-700 leading-7 hidden text-xl text-justify">
+                <ol class="list-decimal list-inside">
+                    <li>Sensor Ultrasonik: Sensor ultrasonik menggunakan gelombang suara ultrasonik untuk mengukur tingkat air. Sensor ini mengirimkan sinyal ultrasonik ke permukaan air dan mengukur waktu yang diperlukan gelombang suara untuk mencapai permukaan air dan kembali lagi. Dengan menggunakan waktu tempuh gelombang suara, sensor dapat menghitung tinggi air.</li>
+                    <li>Sensor Presisi Tekanan: Sensor presisi tekanan menggunakan tekanan hidrostatik dari kolom air di atasnya untuk mengukur tingkat air. Sensor ini berisi sel tekanan yang sensitif terhadap perubahan tekanan dan mengonversinya menjadi tingkat air.</li>
+                    <li>Sensor Konduktif: Sensor konduktif digunakan dalam aplikasi di mana air harus mendekati sensor. Ketika sensor terkena air, resistansinya berubah karena konduktivitas air. Perubahan resistansi ini digunakan untuk mengukur tingkat air.</li>
+                    <li>Sensor Kapasitif: Sensor kapasitif bekerja dengan mengukur kapasitansi elektroda yang berubah ketika terkena air. Ketika air mendekati atau menyentuh elektroda, kapasitansi akan berubah dan dapat diukur untuk mengetahui tingkat air.</li>
+                </ol>
+                <br>
+                <p>
+                    Sensor tingkat air digunakan dalam berbagai aplikasi, termasuk:
+                </p>
+                <br>
+                <ul class="list-disc list-inside">
+                    <li>Pengisian dan pengosongan tangki air.</li>
+                    <li>Pengendalian banjir dan drainase.</li>
+                    <li>Pengawasan tingkat air sungai dan danau untuk tujuan peramalan dan manajemen air.</li>
+                    <li>Aplikasi industri seperti pengukuran level dalam tangki bahan kimia atau tangki penyimpanan lainnya.</li>
+                    <li>Sistem irigasi pertanian untuk mengoptimalkan penggunaan air.</li>
+                    <li>Pengukuran tingkat air tanah untuk pemantauan sumber daya air bawah tanah.</li>
+                </ul>
+                <br>
+                <p>
+                    Sensor tingkat air membantu dalam mengelola dan memantau penggunaan air dengan efisien, mencegah risiko kebanjiran, serta memastikan pasokan air yang konsisten dan tepat dalam berbagai aplikasi.
+                </p>
+            </div>
+            <div class="flex justify-between mt-6">
+                <button id="btn-toggle" class="bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-auto">
+                    Lanjutkan Membaca
+                </button>
+                <button id="" class="bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-auto">
+                    <a href="index.html" class="">Kembali</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script2.js"></script>
+</body>
+</html>

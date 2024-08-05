@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aeroponic - Monitoring Data</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Gaya kustom untuk judul halaman */
+    .page-title {
+      color: #4a5568;
+    }
+
+    /* Gaya kustom untuk blok data */
+    .data-block {
+      background-color: #f7fafc;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Increased blur and spread radius */
+      transition: transform 0.3s ease-in-out; /* Add a transition for smooth hover effect */
+    }
+
+    /* Add a hover effect to simulate lifting the box on hover */
+    .data-block:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased blur and spread radius on hover */
+    }
+
+    .custom-background {
+    background-image: url('assets/4.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  </style>
+
+  <script src="src/script.js">
+  </script>
+</head>
+
+<body class="custom-background">
+  <div class="container mx-auto p-8 flex-col sm:w-[80%] ">
+    <h1 class="text-4xl font-semibold mb-8 mx-auto mt-5 text-center">Aeroponic Data Monitoring</h1>
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-6 mt-10 max-w-3xl mx-auto">
+      <div class="data-block p-6 mb-5">
+        <a href="humidity.html">
+          <img src="assets/humidity.png" alt="Humidity Logo" class="mr-3 w-10 mb-3">
+          <h2 class="text-xl font-semibold mb-4">Humidity</h2>
+          <p id="humidity" class="text-lg">Loading...</p>
+        </a>
+      </div>
+      <div class="data-block p-6 mb-5">
+        <a href="temperature.html">
+          <img src="/assets/temperature.png" alt="Temperature Logo" class="mr-3 w-10 mb-3">
+          <h2 class="text-xl font-semibold mb-4">Temperature</h2>
+          <p id="temperature" class="text-lg">Loading...</p>
+        </a>
+      </div>
+      <div class="data-block p-6 mb-5">
+        <a href="TDS.html">
+          <img src="assets/TDS.png" alt="TDS Logo" class="mr-3 w-10 mb-3">
+          <h2 class="text-xl font-semibold mb-4">TDS (Total Dissolved Solids)</h2>
+          <p id="tds" class="text-lg">Loading...</p>
+        </a>
+      </div>
+      <div class="data-block p-6 mb-5">
+        <a href="waterLevel.html">
+          <img src="assets/waterlevel.png" alt="Water Level Logo" class="mr-3 w-10 mb-3">
+          <h2 class="text-xl font-semibold mb-4">Water Level</h2>
+          <p id="waterLevel" class="text-lg">Loading...</p>
+        </a>
+      </div>
+      <div class="data-block p-6 mb-5">
+        <a href="soilMoisture.html">
+          <img src="assets/soilmoisture.png" alt="Soil Moisture Logo" class="mr-3 w-10 mb-3">
+          <h2 class="text-xl font-semibold mb-4">Soil Moisture</h2>
+          <p id="soilMoisture" class="text-lg">Loading...</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="h-20 bg-gray-600 text-center font-semibold flex items-center justify-center text-3xl">
+    SIC Group 25
+  </footer>
+</body>
+
+</html>
